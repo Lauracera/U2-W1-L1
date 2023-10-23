@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Poppins:ital,wght@0,400;1,300&family=Roboto:wght@400;500&display=swap");
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+#body-background {
+  background-image: url(./sfondo.png);
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#card-header {
+  background-color: rgb(37, 137, 155);
+  width: 95%;
+  margin: 4%;
+  padding: 4%;
+  text-align: center;
+}
+
+#card-header img {
+  width: 30%;
+}
+h1 {
+  font-size: 100%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  color: white;
+}
+#card-header a {
+  color: white;
+  padding-top: 1%;
+}
+
+#main-div {
+  background-color: white;
+  width: 95%;
+  margin: 4%;
+  padding: 4%;
+}
+
+#second-img {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 140%;
+  }
+  #first-img {
+    display: none;
+  }
+  #second-img {
+    display: block;
+  }
+
+  .p-line {
+    display: inline;
+  }
+  #nascosto {
+    display: none;
+  }
+  form {
+    display: none;
+  }
+  .articoli {
+    display: none;
+  }
+  #hidden {
+    display: none;
+  }
+}
+
+@media print {
+  img {
+    display: none;
+  }
+  #card-header {
+    display: none;
+  }
+  iframe {
+    display: none;
+  }
+}
